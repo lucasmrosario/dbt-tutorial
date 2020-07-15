@@ -5929,3 +5929,345 @@ select * from final
 Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 2020-07-15 05:09:59.286572 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x06CDDA60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x06CDD7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0684E988>]}
 2020-07-15 05:09:59.286572 (MainThread): Flushing usage events
+2020-07-15 05:26:33.646739 (MainThread): Running with dbt=0.17.0
+2020-07-15 05:26:34.108028 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.generate.GenerateTask'>, compile=True, debug=False, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\lmrosario\\.dbt', project_dir=None, record_timing_info=None, rpc_method='docs.generate', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='generate', write_json=True)
+2020-07-15 05:26:34.110028 (MainThread): Tracking: tracking
+2020-07-15 05:26:34.110028 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05B75D78>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x067ED820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x067ED8C8>]}
+2020-07-15 05:26:34.130936 (MainThread): Partial parsing not enabled
+2020-07-15 05:26:34.138914 (MainThread): Parsing macros\core.sql
+2020-07-15 05:26:34.143931 (MainThread): Parsing macros\adapters\common.sql
+2020-07-15 05:26:34.193767 (MainThread): Parsing macros\etc\datetime.sql
+2020-07-15 05:26:34.203744 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2020-07-15 05:26:34.204776 (MainThread): Parsing macros\etc\get_custom_database.sql
+2020-07-15 05:26:34.207730 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2020-07-15 05:26:34.209766 (MainThread): Parsing macros\etc\is_incremental.sql
+2020-07-15 05:26:34.211760 (MainThread): Parsing macros\etc\query.sql
+2020-07-15 05:26:34.213713 (MainThread): Parsing macros\materializations\helpers.sql
+2020-07-15 05:26:34.221726 (MainThread): Parsing macros\materializations\common\merge.sql
+2020-07-15 05:26:34.235695 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2020-07-15 05:26:34.238648 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2020-07-15 05:26:34.245665 (MainThread): Parsing macros\materializations\seed\seed.sql
+2020-07-15 05:26:34.267615 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2020-07-15 05:26:34.296492 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2020-07-15 05:26:34.298511 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2020-07-15 05:26:34.316439 (MainThread): Parsing macros\materializations\table\table.sql
+2020-07-15 05:26:34.323421 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2020-07-15 05:26:34.329404 (MainThread): Parsing macros\materializations\view\view.sql
+2020-07-15 05:26:34.336386 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2020-07-15 05:26:34.339378 (MainThread): Parsing macros\schema_tests\not_null.sql
+2020-07-15 05:26:34.340376 (MainThread): Parsing macros\schema_tests\relationships.sql
+2020-07-15 05:26:34.342370 (MainThread): Parsing macros\schema_tests\unique.sql
+2020-07-15 05:26:34.345362 (MainThread): Parsing macros\adapters.sql
+2020-07-15 05:26:34.362360 (MainThread): Parsing macros\catalog.sql
+2020-07-15 05:26:34.368300 (MainThread): Parsing macros\etc.sql
+2020-07-15 05:26:34.369298 (MainThread): Parsing macros\materializations\incremental.sql
+2020-07-15 05:26:34.383260 (MainThread): Parsing macros\materializations\seed.sql
+2020-07-15 05:26:34.386252 (MainThread): Parsing macros\materializations\snapshot.sql
+2020-07-15 05:26:34.389245 (MainThread): Parsing macros\materializations\table.sql
+2020-07-15 05:26:34.399256 (MainThread): Parsing macros\materializations\view.sql
+2020-07-15 05:26:34.423154 (MainThread): Partial parsing not enabled
+2020-07-15 05:26:34.457104 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.customers".
+2020-07-15 05:26:34.457104 (MainThread): Opening a new connection, currently in state init
+2020-07-15 05:26:34.484030 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_customers".
+2020-07-15 05:26:34.484030 (MainThread): Opening a new connection, currently in state closed
+2020-07-15 05:26:34.495000 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_orders".
+2020-07-15 05:26:34.495000 (MainThread): Opening a new connection, currently in state closed
+2020-07-15 05:26:34.782193 (MainThread): Found 3 models, 7 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 05:26:34.783223 (MainThread): 
+2020-07-15 05:26:34.783223 (MainThread): Acquiring new bigquery connection "master".
+2020-07-15 05:26:34.783223 (MainThread): Opening a new connection, currently in state closed
+2020-07-15 05:26:34.789180 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_bigquery-dbt".
+2020-07-15 05:26:34.789180 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 05:26:35.455125 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_bigquery-dbt_dbt_lucas".
+2020-07-15 05:26:35.455125 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-07-15 05:26:35.457157 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-07-15 05:26:35.914150 (MainThread): 02:26:35 | Concurrency: 1 threads (target='dev')
+2020-07-15 05:26:35.915187 (MainThread): 02:26:35 | 
+2020-07-15 05:26:35.922128 (Thread-1): Began running node model.jaffle_shop.stg_customers
+2020-07-15 05:26:35.922128 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.stg_customers".
+2020-07-15 05:26:35.922128 (Thread-1): Opening a new connection, currently in state init
+2020-07-15 05:26:35.923125 (Thread-1): Compiling model.jaffle_shop.stg_customers
+2020-07-15 05:26:35.940108 (Thread-1): Writing injected SQL for node "model.jaffle_shop.stg_customers"
+2020-07-15 05:26:35.944069 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.944069 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.944069 (Thread-1): Finished running node model.jaffle_shop.stg_customers
+2020-07-15 05:26:35.945068 (Thread-1): Began running node model.jaffle_shop.stg_orders
+2020-07-15 05:26:35.945068 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.stg_orders".
+2020-07-15 05:26:35.945068 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:35.945068 (Thread-1): Compiling model.jaffle_shop.stg_orders
+2020-07-15 05:26:35.952049 (Thread-1): Writing injected SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 05:26:35.956037 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.956037 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.957036 (Thread-1): Finished running node model.jaffle_shop.stg_orders
+2020-07-15 05:26:35.957036 (Thread-1): Began running node test.jaffle_shop.not_null_stg_customers_customer_id
+2020-07-15 05:26:35.957036 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.not_null_stg_customers_customer_id".
+2020-07-15 05:26:35.958033 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:35.958033 (Thread-1): Compiling test.jaffle_shop.not_null_stg_customers_customer_id
+2020-07-15 05:26:35.973990 (Thread-1): Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id"
+2020-07-15 05:26:35.976983 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.977980 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.977980 (Thread-1): Finished running node test.jaffle_shop.not_null_stg_customers_customer_id
+2020-07-15 05:26:35.977980 (Thread-1): Began running node test.jaffle_shop.unique_stg_customers_customer_id
+2020-07-15 05:26:35.978977 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.unique_stg_customers_customer_id".
+2020-07-15 05:26:35.978977 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:35.978977 (Thread-1): Compiling test.jaffle_shop.unique_stg_customers_customer_id
+2020-07-15 05:26:35.987952 (Thread-1): Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id"
+2020-07-15 05:26:35.990944 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.990944 (Thread-1): finished collecting timing info
+2020-07-15 05:26:35.991943 (Thread-1): Finished running node test.jaffle_shop.unique_stg_customers_customer_id
+2020-07-15 05:26:35.991943 (Thread-1): Began running node model.jaffle_shop.customers
+2020-07-15 05:26:35.991943 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.customers".
+2020-07-15 05:26:35.991943 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:35.991943 (Thread-1): Compiling model.jaffle_shop.customers
+2020-07-15 05:26:36.000917 (Thread-1): Writing injected SQL for node "model.jaffle_shop.customers"
+2020-07-15 05:26:36.005904 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.005904 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.006901 (Thread-1): Finished running node model.jaffle_shop.customers
+2020-07-15 05:26:36.006901 (Thread-1): Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2020-07-15 05:26:36.007899 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned".
+2020-07-15 05:26:36.007899 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:36.007899 (Thread-1): Compiling test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2020-07-15 05:26:36.020863 (Thread-1): Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"
+2020-07-15 05:26:36.024854 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.024854 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.025852 (Thread-1): Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2020-07-15 05:26:36.025852 (Thread-1): Began running node test.jaffle_shop.not_null_stg_orders_order_id
+2020-07-15 05:26:36.025852 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.not_null_stg_orders_order_id".
+2020-07-15 05:26:36.025852 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:36.025852 (Thread-1): Compiling test.jaffle_shop.not_null_stg_orders_order_id
+2020-07-15 05:26:36.033855 (Thread-1): Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id"
+2020-07-15 05:26:36.042806 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.043805 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.043805 (Thread-1): Finished running node test.jaffle_shop.not_null_stg_orders_order_id
+2020-07-15 05:26:36.043805 (Thread-1): Began running node test.jaffle_shop.unique_stg_orders_order_id
+2020-07-15 05:26:36.043805 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.unique_stg_orders_order_id".
+2020-07-15 05:26:36.044800 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:36.044800 (Thread-1): Compiling test.jaffle_shop.unique_stg_orders_order_id
+2020-07-15 05:26:36.052778 (Thread-1): Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id"
+2020-07-15 05:26:36.056768 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.056768 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.057766 (Thread-1): Finished running node test.jaffle_shop.unique_stg_orders_order_id
+2020-07-15 05:26:36.057766 (Thread-1): Began running node test.jaffle_shop.not_null_customers_customer_id
+2020-07-15 05:26:36.057766 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.not_null_customers_customer_id".
+2020-07-15 05:26:36.057766 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:36.057766 (Thread-1): Compiling test.jaffle_shop.not_null_customers_customer_id
+2020-07-15 05:26:36.066741 (Thread-1): Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id"
+2020-07-15 05:26:36.069734 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.069734 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.069734 (Thread-1): Finished running node test.jaffle_shop.not_null_customers_customer_id
+2020-07-15 05:26:36.069734 (Thread-1): Began running node test.jaffle_shop.unique_customers_customer_id
+2020-07-15 05:26:36.070732 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.unique_customers_customer_id".
+2020-07-15 05:26:36.070732 (Thread-1): Opening a new connection, currently in state closed
+2020-07-15 05:26:36.070732 (Thread-1): Compiling test.jaffle_shop.unique_customers_customer_id
+2020-07-15 05:26:36.079708 (Thread-1): Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id"
+2020-07-15 05:26:36.083696 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.083696 (Thread-1): finished collecting timing info
+2020-07-15 05:26:36.084694 (Thread-1): Finished running node test.jaffle_shop.unique_customers_customer_id
+2020-07-15 05:26:36.085690 (MainThread): Connection 'master' was properly closed.
+2020-07-15 05:26:36.085690 (MainThread): Connection 'list_bigquery-dbt' was left open.
+2020-07-15 05:26:36.085690 (MainThread): Connection 'list_bigquery-dbt_dbt_lucas' was left open.
+2020-07-15 05:26:36.085690 (MainThread): Connection 'test.jaffle_shop.unique_customers_customer_id' was properly closed.
+2020-07-15 05:26:36.119600 (MainThread): 02:26:36 | Done.
+2020-07-15 05:26:36.188416 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2020-07-15 05:26:36.188416 (MainThread): Opening a new connection, currently in state init
+2020-07-15 05:26:36.188416 (MainThread): 02:26:36 | Building catalog
+2020-07-15 05:26:36.598112 (ThreadPoolExecutor-2_0): Acquiring new bigquery connection "bigquery-dbt.information_schema".
+2020-07-15 05:26:36.599059 (ThreadPoolExecutor-2_0): Opening a new connection, currently in state init
+2020-07-15 05:26:36.630970 (ThreadPoolExecutor-2_0): On bigquery-dbt.information_schema: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "bigquery-dbt.information_schema"} */
+
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `bigquery-dbt`.`dbt_lucas`.__TABLES__
+        where (upper(dataset_id) = upper('dbt_lucas'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+            cast(null as string) as column_comment,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `bigquery-dbt`.`dbt_lucas`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name
+
+        from `bigquery-dbt`.`dbt_lucas`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+        where data_type not like 'STRUCT%'
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2020-07-15 05:26:40.184976 (MainThread): 02:26:40 | Catalog written to D:\lucas\Freela\DBT\dbt-tutorial\target\catalog.json
+2020-07-15 05:26:40.185973 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05B75D78>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x075EB2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x075EB340>]}
+2020-07-15 05:26:40.185973 (MainThread): Flushing usage events
+2020-07-15 05:26:40.397150 (MainThread): Connection 'generate_catalog' was left open.
+2020-07-15 05:26:40.397150 (MainThread): Connection 'bigquery-dbt.information_schema' was left open.
