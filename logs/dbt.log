@@ -5540,3 +5540,14 @@ Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 2020-07-15 03:41:08.326488 (MainThread): Flushing usage events
 2020-07-15 03:41:08.578193 (MainThread): Connection 'generate_catalog' was left open.
 2020-07-15 03:41:08.579184 (MainThread): Connection 'bigquery-dbt.information_schema' was left open.
+2020-07-15 03:41:16.701384 (MainThread): Running with dbt=0.17.0
+2020-07-15 03:41:17.160499 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.serve.ServeTask'>, debug=False, log_cache_events=False, log_format='default', open_browser=True, partial_parse=None, port=8080, profile=None, profiles_dir='C:\\Users\\lmrosario\\.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='serve', write_json=True)
+2020-07-15 03:41:17.162443 (MainThread): Tracking: tracking
+2020-07-15 03:41:17.162443 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x06155DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x06DCEAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x06DCE868>]}
+2020-07-15 03:41:17.200341 (MainThread): Serving docs at 0.0.0.0:8080
+2020-07-15 03:41:17.200341 (MainThread): To access from your browser, navigate to:  http://localhost:8080
+2020-07-15 03:41:17.200341 (MainThread): Press Ctrl+C to exit.
+
+
+2020-07-15 04:44:16.735459 (MainThread): Flushing usage events
+2020-07-15 04:44:17.027526 (MainThread): ctrl-c
