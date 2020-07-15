@@ -1,29 +1,19 @@
 
 
-  create or replace view `bigquery-dbt`.`dbt_lucas`.`customers`
+  create or replace table `bigquery-dbt`.`dbt_lucas`.`customers`
+  
+  
   OPTIONS()
-  as 
+  as (
+    with customers as (
 
-with customers as (
-
-    select
-        id as customer_id,
-        first_name,
-        last_name
-
-    from `dbt-tutorial`.jaffle_shop.customers
+    select * from `bigquery-dbt`.`dbt_lucas`.`stg_customers`
 
 ),
 
 orders as (
 
-    select
-        id as order_id,
-        user_id as customer_id,
-        order_date,
-        status
-
-    from `dbt-tutorial`.jaffle_shop.orders
+    select * from `bigquery-dbt`.`dbt_lucas`.`stg_orders`
 
 ),
 
@@ -59,5 +49,6 @@ final as (
 
 )
 
-select * from final;
-
+select * from final
+  );
+    
